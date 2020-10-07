@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:id="@+id/card_tk_id"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:ignore="MissingConstraints" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/img_sach"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/botron"
+        android:src="@drawable/loai1" />
+
+    <TextView
+        android:id="@+id/txt_tensach"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tên sách"
+        android:textSize="20dp"
+        android:layout_toRightOf="@id/img_sach"
+        android:layout_marginLeft="10dp"
+        />
+
+    <TextView
+        android:id="@+id/txt_tacgia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_tensach"
+        android:layout_toRightOf="@id/img_sach"
+        android:paddingLeft="10dp"
+        android:text="bla bla bla"
+        android:textSize="20dp" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

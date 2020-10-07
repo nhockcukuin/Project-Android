@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/nav_timkiem"
+        android:icon="@drawable/baseline_search_black_36dp"
+        android:title="Tìm Kiếm" />
+
+    <item
+        android:id="@+id/nav_tuychon"
+        android:icon="@drawable/baseline_face_black_36dp"
+        android:title="Tùy chọn" />
+
+</menu>
