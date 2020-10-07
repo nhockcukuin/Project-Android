@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".TimKiemActivity"
+    tools:deviceIds="wear">
+
+    <EditText
+        android:id="@+id/edt_timkiem"
+        android:layout_width="200dp"
+        android:hint="Tìm kiếm"
+        android:textAlignment="center"
+        android:layout_height="wrap_content"
+        android:background="@drawable/botron"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="25dp"
+        />
+
+    <ImageButton
+        android:id="@+id/img_tk"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/btn_timkiem"
+        android:onClick="btntimkiem"
+        android:src="@drawable/baseline_search_black_36dp_x1"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="45dp"
+        tools:ignore="OnClick" />
+
+    <TextView
+        android:id="@+id/text_lstk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lịch sử tìm kiếm"
+        android:textSize="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/edt_timkiem"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_tk"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_above="@+id/bottom_navigation"
+        android:layout_below="@+id/text_lstk"
+        />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        app:itemBackground="@color/colorPrimaryDark"
+        app:itemTextColor="#ffffff"
+        app:itemIconTint="#ffffff"
+        app:menu="@menu/bottom_nav_menu"
+        android:layout_alignParentBottom="true"
+        />
+</RelativeLayout>
