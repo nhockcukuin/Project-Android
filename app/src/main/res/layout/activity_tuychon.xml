@@ -32,7 +32,7 @@
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
         android:layout_below="@+id/txt_tuychon"
-
+        android:layout_centerHorizontal="true"
         />
 
     <Button
@@ -46,6 +46,7 @@
         android:layout_marginTop="25dp"
         android:background="@drawable/botron"
         android:layout_below="@+id/btn_tuychon_thongtin"
+        android:layout_centerHorizontal="true"
         />
 
     <Button
@@ -59,6 +60,7 @@
         android:layout_marginTop="25dp"
         android:background="@drawable/botron"
         android:layout_below="@+id/btn_tuychon_yeuthich"
+        android:layout_centerHorizontal="true"
         />
 
     <Button
@@ -72,6 +74,8 @@
         android:layout_marginTop="20dp"
         android:background="@drawable/botron"
         android:layout_below="@+id/btn_tuychon_dangxuat"
+        android:layout_centerHorizontal="true"
+
         />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
